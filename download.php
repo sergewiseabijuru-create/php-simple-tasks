@@ -83,7 +83,7 @@
 <?php
 if (isset($_POST['filename'])) {
 
-    // 🔒 Remove path traversal attempts
+    // Remove path traversal attempts
     $filename = basename($_POST['filename']);
     $file = "uploads/" . $filename;
 
@@ -99,7 +99,7 @@ if (isset($_POST['filename'])) {
         exit;
 
     } else {
-        $message = "❌ File not found!";
+        $message = " File not found!";
     }
 }
 ?>
